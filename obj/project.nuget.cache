@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "62PxlHJy2ka8mIoxk/byn6N2/zF4mnudEAIZYcpizXSEpGJU4uvNbEclTyUilaPP/d03VCrpnBNLfL468AbnCQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\IlGringo\\Desktop\\AiCademy\\GestioneFILM\\GestioneFilm\\GestioneFilm.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\IlGringo\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

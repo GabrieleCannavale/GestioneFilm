@@ -1,0 +1,17 @@
+C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\bin\Debug\net6.0\GestioneFilm.exe
+C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\bin\Debug\net6.0\GestioneFilm.deps.json
+C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\bin\Debug\net6.0\GestioneFilm.runtimeconfig.json
+C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\bin\Debug\net6.0\GestioneFilm.dll
+C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\bin\Debug\net6.0\GestioneFilm.pdb
+C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\obj\Debug\net6.0\GestioneFilm.csproj.AssemblyReference.cache
+C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\obj\Debug\net6.0\GestioneFilm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\obj\Debug\net6.0\GestioneFilm.AssemblyInfoInputs.cache
+C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\obj\Debug\net6.0\GestioneFilm.AssemblyInfo.cs
+C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\obj\Debug\net6.0\GestioneFilm.csproj.CoreCompileInputs.cache
+C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\obj\Debug\net6.0\GestioneFilm.csproj.CopyComplete
+C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\obj\Debug\net6.0\GestioneFilm.dll
+C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\obj\Debug\net6.0\refint\GestioneFilm.dll
+C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\obj\Debug\net6.0\GestioneFilm.pdb
+C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\obj\Debug\net6.0\GestioneFilm.genruntimeconfig.cache
+C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\obj\Debug\net6.0\ref\GestioneFilm.dll

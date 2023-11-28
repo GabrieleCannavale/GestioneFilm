@@ -1,0 +1,17 @@
+C:\Users\IlGringo\Source\Repos\GestioneFilmStefanoSlt\GestioneFilmStefano\bin\Debug\net6.0\GestioneFilmStefano.exe
+C:\Users\IlGringo\Source\Repos\GestioneFilmStefanoSlt\GestioneFilmStefano\bin\Debug\net6.0\GestioneFilmStefano.deps.json
+C:\Users\IlGringo\Source\Repos\GestioneFilmStefanoSlt\GestioneFilmStefano\bin\Debug\net6.0\GestioneFilmStefano.runtimeconfig.json
+C:\Users\IlGringo\Source\Repos\GestioneFilmStefanoSlt\GestioneFilmStefano\bin\Debug\net6.0\GestioneFilmStefano.dll
+C:\Users\IlGringo\Source\Repos\GestioneFilmStefanoSlt\GestioneFilmStefano\bin\Debug\net6.0\GestioneFilmStefano.pdb
+C:\Users\IlGringo\Source\Repos\GestioneFilmStefanoSlt\GestioneFilmStefano\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\IlGringo\Source\Repos\GestioneFilmStefanoSlt\GestioneFilmStefano\obj\Debug\net6.0\GestioneFilmStefano.csproj.AssemblyReference.cache
+C:\Users\IlGringo\Source\Repos\GestioneFilmStefanoSlt\GestioneFilmStefano\obj\Debug\net6.0\GestioneFilmStefano.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IlGringo\Source\Repos\GestioneFilmStefanoSlt\GestioneFilmStefano\obj\Debug\net6.0\GestioneFilmStefano.AssemblyInfoInputs.cache
+C:\Users\IlGringo\Source\Repos\GestioneFilmStefanoSlt\GestioneFilmStefano\obj\Debug\net6.0\GestioneFilmStefano.AssemblyInfo.cs
+C:\Users\IlGringo\Source\Repos\GestioneFilmStefanoSlt\GestioneFilmStefano\obj\Debug\net6.0\GestioneFilmStefano.csproj.CoreCompileInputs.cache
+C:\Users\IlGringo\Source\Repos\GestioneFilmStefanoSlt\GestioneFilmStefano\obj\Debug\net6.0\GestioneFilmStefano.csproj.CopyComplete
+C:\Users\IlGringo\Source\Repos\GestioneFilmStefanoSlt\GestioneFilmStefano\obj\Debug\net6.0\GestioneFilmStefano.dll
+C:\Users\IlGringo\Source\Repos\GestioneFilmStefanoSlt\GestioneFilmStefano\obj\Debug\net6.0\refint\GestioneFilmStefano.dll
+C:\Users\IlGringo\Source\Repos\GestioneFilmStefanoSlt\GestioneFilmStefano\obj\Debug\net6.0\GestioneFilmStefano.pdb
+C:\Users\IlGringo\Source\Repos\GestioneFilmStefanoSlt\GestioneFilmStefano\obj\Debug\net6.0\GestioneFilmStefano.genruntimeconfig.cache
+C:\Users\IlGringo\Source\Repos\GestioneFilmStefanoSlt\GestioneFilmStefano\obj\Debug\net6.0\ref\GestioneFilmStefano.dll
