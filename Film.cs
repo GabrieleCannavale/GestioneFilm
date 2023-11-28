@@ -11,10 +11,10 @@ namespace GestioneFilm
 
         public override void Play()
         {
-            Random rnd = new Random();
-            int Durata = rnd.Next(1, DurataMin);
-            Console.WriteLine("il film" + titolo + " e al minuto  " + DurataMin);
+            
+            Console.WriteLine($"il film {titolo} è in riproduzione al minuto {minutoCorrente()}");
         }
 
+        
     }
 }

@@ -8,11 +8,14 @@ namespace GestioneFilm
 {
     public abstract class GenericMedia : IMedia
     {
-        public int DurataMin { get; set; }
+        public int DurataMin { get; set; } = 0;
         public string? titolo;
+
         public enum typePremio { Oscar, David, Grammy };
 
         public typePremio Premio { get; set; }
+
+
 
 
 
@@ -21,6 +24,13 @@ namespace GestioneFilm
         public void Stop()
         {
             Console.WriteLine("la riproduzione è stata stoppata");
+        }
+
+        public int minutoCorrente()
+        {
+            Random rnd = new Random();
+            int Durata = rnd.Next(1, DurataMin + 1);
+            return Durata;
         }
     }
 }

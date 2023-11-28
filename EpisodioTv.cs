@@ -14,9 +14,10 @@ namespace GestioneFilm
 
         public override void Play()
         {
-            Random rnd = new Random();
-            int Durata = rnd.Next(1, 61);
-            Console.WriteLine("l'episodio" + titolo + " e al minuto  " + Durata);
+            Console.WriteLine
+                ($"l'episodio {titolo} \n " +
+                $"( stagione {Stagione}, N. Ep: {numeroEpisodio}) \n" +
+                $"è in riproduzione al minuto {minutoCorrente()}");
         }
 
     }

@@ -14,7 +14,7 @@ namespace GestioneFilm // Note: actual namespace depends on the project name.
             Film starWars = new Film();
             starWars.titolo = "Star Wars";
             starWars.Premio = GenericMedia.typePremio.Oscar;
-            starWars.DurataMin = 190;
+            starWars.DurataMin =190;
             starWars.Play();
             Console.WriteLine(starWars.Premio);
 
@@ -23,8 +23,10 @@ namespace GestioneFilm // Note: actual namespace depends on the project name.
             breakingBad2x1.titolo = "Breaking Bad";
             breakingBad2x1.numeroEpisodio = 1;
             breakingBad2x1.Stagione = 2;
+            //breakingBad2x1.DurataMin = 79;
             breakingBad2x1.Premio = GenericMedia.typePremio.Grammy;
             breakingBad2x1.Play();
+            breakingBad2x1.Stop();
 
 
             //Interfaccia IMedia 
