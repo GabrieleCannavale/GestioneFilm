@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using GestioneFilm;
 using Newtonsoft.Json;
+using Packt.Shared;
 using static System.Console;
 using static System.Environment;
 using static System.IO.Path;
@@ -11,23 +12,63 @@ namespace GestioneFilm // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            Film starWars = new Film();
-            starWars.titolo = "Star Wars";
-            starWars.Premio = GenericMedia.typePremio.Oscar;
-            starWars.DurataMin =190;
-            starWars.Play();
-            Console.WriteLine(starWars.Premio);
+            //nuovo film
+            Film resevoirDogs = new Film();
+            resevoirDogs.titolo = "Star Wars";
+            resevoirDogs.Premio = GenericMedia.typePremio.Oscar;
+            resevoirDogs.DurataMin =190;
+            resevoirDogs.Play();
+            Console.WriteLine(resevoirDogs.Premio);
 
+            //nuovo episodio tv
+            EpisodioTv breakingBad = new EpisodioTv();
+            breakingBad.titolo = "Breaking Bad";
+            breakingBad.numeroEpisodio = 1;
+            breakingBad.Stagione = 2;
+            breakingBad.DurataMin = 49;
+            breakingBad.Premio = GenericMedia.typePremio.Grammy;
+            breakingBad.Play();
+            breakingBad.Stop();
 
-            EpisodioTv breakingBad2x1 = new EpisodioTv();
-            breakingBad2x1.titolo = "Breaking Bad";
-            breakingBad2x1.numeroEpisodio = 1;
-            breakingBad2x1.Stagione = 2;
-            //breakingBad2x1.DurataMin = 79;
-            breakingBad2x1.Premio = GenericMedia.typePremio.Grammy;
-            breakingBad2x1.Play();
-            breakingBad2x1.Stop();
+            // nuova lista film e immissione nuovi film
+            var tarantinoFilms = new List<Film>
+            {
+                new Film() {titolo = "DJANGO", DurataMin = 150, Premio = GenericMedia.typePremio.Oscar},
+                new Film() { titolo = "The hateful 8", DurataMin = 138, Premio = GenericMedia.typePremio.Oscar},
+                new Film() {titolo = "PULP FICTION", DurataMin = 164, Premio = GenericMedia.typePremio.Oscar},
+                new Film() { titolo = "Inglorious Bastards", DurataMin = 200, Premio = GenericMedia.typePremio.Oscar},
+                new Film() {titolo = "KILL BILL", DurataMin = 133, Premio = GenericMedia.typePremio.Oscar},
+                new Film() { titolo = "KILL BILL 2", DurataMin = 141, Premio = GenericMedia.typePremio.Oscar},
+                new Film() {titolo = "Once upon a time in Hollywood", DurataMin = 122, Premio = GenericMedia.typePremio.Oscar},
+                resevoirDogs
+            };
 
+            // ciclo forEach per tutti i film della lista
+            foreach(var film in tarantinoFilms) 
+            {
+                film.Play();
+            }
+
+            //nuova lista episodi tv e immissione nuovi episodi
+            var bobOdenkirkEpisodes = new List<EpisodioTv>
+            {
+                new EpisodioTv() {titolo = "BetterCallSaul", DurataMin = 60, Stagione = 4, numeroEpisodio = 40, Premio = GenericMedia.typePremio.Grammy},
+                new EpisodioTv() {titolo = "Seinfield", DurataMin = 21, Stagione = 3, numeroEpisodio = 31, Premio = GenericMedia.typePremio.Grammy},
+                new EpisodioTv() {titolo = "How I Met Your Mother", DurataMin = 30, Stagione = 8, numeroEpisodio = 100, Premio = GenericMedia.typePremio.Grammy},
+                breakingBad
+            };
+
+            //ciclo foreach per tutti gli episodi della lista
+            foreach (var episodio in bobOdenkirkEpisodes)
+            {
+                episodio.Play();
+            }
+
+            Console.WriteLine("inserici una pw per criptare il titolo di resevoir dogs");
+            string cryptoText = Protector.Encrypt(resevoirDogs.titolo, Console.ReadLine());
+            Console.WriteLine("reimmetti la pw per decriptare il titolo");
+            string clearText = Protector.Decrypt(cryptoText, Console.ReadLine());
+            Console.WriteLine($"titolo criptato:{cryptoText}\n titolo decriptato: {clearText}");
 
             //Interfaccia IMedia 
             //Titolo // string

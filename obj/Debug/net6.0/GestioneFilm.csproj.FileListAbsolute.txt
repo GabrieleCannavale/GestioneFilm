@@ -15,3 +15,5 @@ C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\obj\Debug\net6.0\re
 C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\obj\Debug\net6.0\GestioneFilm.pdb
 C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\obj\Debug\net6.0\GestioneFilm.genruntimeconfig.cache
 C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\obj\Debug\net6.0\ref\GestioneFilm.dll
+C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\bin\Debug\net6.0\CryptoLib.dll
+C:\Users\IlGringo\Desktop\AiCademy\GestioneFILM\GestioneFilm\bin\Debug\net6.0\CryptoLib.pdb
