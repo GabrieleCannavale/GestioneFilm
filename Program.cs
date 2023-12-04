@@ -12,13 +12,19 @@ namespace GestioneFilm // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
+            
+            Console.WriteLine("inserire la pw per criptare i titoli dei media");
+            string? passWord = Console.ReadLine();
+
             //nuovo film
             Film resevoirDogs = new Film();
-            resevoirDogs.titolo = "Star Wars";
+            resevoirDogs.titolo = "Resevoir Dogs";
             resevoirDogs.Premio = GenericMedia.typePremio.Oscar;
             resevoirDogs.DurataMin =190;
             resevoirDogs.Play();
+            resevoirDogs.mediaPassword = passWord;
             Console.WriteLine(resevoirDogs.Premio);
+            Console.WriteLine(resevoirDogs.cryptoTitle);
 
             //nuovo episodio tv
             EpisodioTv breakingBad = new EpisodioTv();
@@ -33,19 +39,20 @@ namespace GestioneFilm // Note: actual namespace depends on the project name.
             // nuova lista film e immissione nuovi film
             var tarantinoFilms = new List<Film>
             {
-                new Film() {titolo = "DJANGO", DurataMin = 150, Premio = GenericMedia.typePremio.Oscar},
-                new Film() { titolo = "The hateful 8", DurataMin = 138, Premio = GenericMedia.typePremio.Oscar},
-                new Film() {titolo = "PULP FICTION", DurataMin = 164, Premio = GenericMedia.typePremio.Oscar},
-                new Film() { titolo = "Inglorious Bastards", DurataMin = 200, Premio = GenericMedia.typePremio.Oscar},
-                new Film() {titolo = "KILL BILL", DurataMin = 133, Premio = GenericMedia.typePremio.Oscar},
-                new Film() { titolo = "KILL BILL 2", DurataMin = 141, Premio = GenericMedia.typePremio.Oscar},
-                new Film() {titolo = "Once upon a time in Hollywood", DurataMin = 122, Premio = GenericMedia.typePremio.Oscar},
+                new Film() {titolo = "DJANGO", DurataMin = 150, Premio = GenericMedia.typePremio.Oscar, mediaPassword = passWord},
+                new Film() { titolo = "The hateful 8", DurataMin = 138, Premio = GenericMedia.typePremio.Oscar, mediaPassword = passWord},
+                new Film() {titolo = "PULP FICTION", DurataMin = 164, Premio = GenericMedia.typePremio.Oscar, mediaPassword = passWord},
+                new Film() { titolo = "Inglorious Bastards", DurataMin = 200, Premio = GenericMedia.typePremio.Oscar, mediaPassword = passWord},
+                new Film() {titolo = "KILL BILL", DurataMin = 133, Premio = GenericMedia.typePremio.Oscar, mediaPassword = passWord},
+                new Film() { titolo = "KILL BILL 2", DurataMin = 141, Premio = GenericMedia.typePremio.Oscar, mediaPassword = passWord},
+                new Film() {titolo = "Once upon a time in Hollywood", DurataMin = 122, Premio = GenericMedia.typePremio.Oscar, mediaPassword = passWord},
                 resevoirDogs
             };
 
             // ciclo forEach per tutti i film della lista
             foreach(var film in tarantinoFilms) 
             {
+                Console.WriteLine(film.cryptoTitle);
                 film.Play();
             }
 
@@ -64,11 +71,44 @@ namespace GestioneFilm // Note: actual namespace depends on the project name.
                 episodio.Play();
             }
 
-            Console.WriteLine("inserici una pw per criptare il titolo di resevoir dogs");
-            string cryptoText = Protector.Encrypt(resevoirDogs.titolo, Console.ReadLine());
-            Console.WriteLine("reimmetti la pw per decriptare il titolo");
-            string clearText = Protector.Decrypt(cryptoText, Console.ReadLine());
-            Console.WriteLine($"titolo criptato:{cryptoText}\n titolo decriptato: {clearText}");
+            //Creo il path del file da utilizzare
+            string jsonPath = Combine(CurrentDirectory, "tarantinoFilms.json");
+
+            //Utilizzo la calsse statica del NewtonSoft
+            var js2 = JsonConvert.SerializeObject(tarantinoFilms);
+            // Utilizzo File.Write all della classe System.IO ( che gestisce in autonomia lo stream )
+            File.WriteAllText(jsonPath, js2);
+
+            WriteLine(File.ReadAllText(jsonPath));
+
+            //Rileggere il file serializzato appoggiandolo in una stringa
+            string buff = File.ReadAllText(jsonPath);
+
+            //Ricrea la lista di Obj tarantinoFilms a partire dalla stringa Json 
+            var loadTarantinoFilms = JsonConvert.DeserializeObject<List<Film>>(buff);
+
+
+            if (loadTarantinoFilms != null)
+            {
+                // se l'obj esiste lo scrive a video
+                foreach (var item in loadTarantinoFilms)
+                {
+                    loadTarantinoFilms.ForEach(item => Console.WriteLine($"Il titolo criptato è : {item.cryptoTitle}"));
+                }
+            }
+            else
+            {
+                Console.Write("La Lista di film è vuota");
+            }
+
+
+           
+
+            //Console.WriteLine("inserici una pw per criptare il titolo di resevoir dogs");
+            //string cryptoText = Protector.Encrypt(resevoirDogs.titolo, Console.ReadLine());
+            //Console.WriteLine("reimmetti la pw per decriptare il titolo");
+            //string clearText = Protector.Decrypt(cryptoText, Console.ReadLine());
+            //Console.WriteLine($"titolo criptato:{cryptoText}\n titolo decriptato: {clearText}");
 
             //Interfaccia IMedia 
             //Titolo // string

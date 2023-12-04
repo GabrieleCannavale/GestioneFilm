@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Packt.Shared;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,14 +11,15 @@ namespace GestioneFilm
     {
         public int DurataMin { get; set; } = 0;
         public string? titolo;
+        public string? mediaPassword { get; set; }
 
         public enum typePremio { Oscar, David, Grammy };
 
         public typePremio Premio { get; set; }
 
-
-
-
+        //public string cryptoTitle {  get; set; } = string.Empty;
+        public string cryptoTitle => Protector.Encrypt(titolo, mediaPassword);
+        public string clearText => Protector.Decrypt(cryptoTitle, mediaPassword);
 
         public abstract void Play();
 
