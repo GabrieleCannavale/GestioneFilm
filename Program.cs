@@ -91,10 +91,9 @@ namespace GestioneFilm // Note: actual namespace depends on the project name.
             if (loadTarantinoFilms != null)
             {
                 // se l'obj esiste lo scrive a video
-                foreach (var item in loadTarantinoFilms)
-                {
+               
                     loadTarantinoFilms.ForEach(item => Console.WriteLine($"Il titolo criptato è : {item.cryptoTitle}"));
-                }
+                
             }
             else
             {
